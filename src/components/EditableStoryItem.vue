@@ -12,7 +12,8 @@
             <story-connection v-if="isOpenSetting" :ProgrammersTeams="['Programmers','Designers','Testers',]"
              electedProgramer="Programmers"
              SelectedSprintName='Testování a odhalování chyb aplikace'
-             :SprintsName="['Testování a odhalování chyb aplikace']">
+             :SprintsName="['Testování a odhalování chyb aplikace']"
+             @save="()=>{isOpenSetting = false}">
             </story-connection>
         </div>
     </div>
